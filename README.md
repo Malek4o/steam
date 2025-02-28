@@ -4,3 +4,13 @@
 you have Id from steamdb and want the lua and manifest files ?
 
 I came here with my Website Add your game Id in seconds the lua and manifest will download 
+
+here is the link
+https://malek4o.github.io/steam/
+
+if you dont sure about link safety
+check the link with link chercker sites
+
+https://nordvpn.com/link-checker/
+https://www.drlinkcheck.com/
+or any link checker
