@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="steam.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="head.js">
+    <title>Generator Lua & Manifest</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header_logo">
+                <img src="steam.png" alt="site logo">
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <span>Manifest & Lua Generator</span>
+        <p>
+            Feel free <a href="https://cysaw.top/bug.html" target="_blank">report it</a>.
+        </p>
+        <p>
+            Check our <a href="G:\projects\steam\steam 2\applist\index.html" target="_blank">Game List</a> for available games.
+        </p>
+
+        <div class="input-group">
+            <input type="text" id="numberInput" placeholder="App ID" required>
+            <input type="reset" value="Reset" onclick="resetInput()">
+            <button type="button" onclick="openLink()">Download</button>
+        </div>
+        <script>
+            function resetInput() {
+                document.getElementById('numberInput').value = '';
+            }
+    
+            function openLink() {
+                let input = document.getElementById("numberInput").value;
+                if (/^\d+$/.test(input)) {
+                    let url = `https://cysaw.top/uploads/${input}.zip`;
+                    window.location.href = url;
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Invalid Input',
+                        text: 'Please enter numbers only!',
+                        confirmButtonColor: '#0078f2'
+                    });
+                }
+            }
+        </script>
+    </section>
+
+    <script>
+        function openLink() {
+            let input = document.getElementById("numberInput").value;
+            if (/^\d+$/.test(input)) {
+                let url = `https://cysaw.top/uploads/${input}.zip`;
+                window.location.href = url;
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Input',
+                    text: 'Please enter numbers only!',
+                    confirmButtonColor: '#0078f2'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+

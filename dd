@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="steam.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="head.js">
+    <title>Generator Lua & Manifest</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body {
+        background-image: url("gg.jpg");
+      }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header_logo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <span>Manifest & Lua Generator</span>
+        <p>
+            feel free <a href="https://cysaw.top/bug.html" style="color: rgb(206, 190, 190); text-decoration: none;" target="_blank">report it</a>.
+        </p>
+        <p>
+            Check our <a href="G:\projects\steam\steam 2\applist\index.html" style="color: rgb(206, 190, 190); text-decoration: none;" target="_blank">Game List</a> for available games.
+        </p>
+
+        <div style="margin-top: 20px; display: flex">
+            <form id="idForm"></form>
+            <input type="text" id="numberInput" placeholder= "App Id" required style="padding: 10px; border: 1px solid transparent; border-radius: 5px; font-size: 16px; width: 65%; box-sizing: border-box; margin-right: 10px;">
+            <button type="button" onclick="openLink()">download</button style="padding: 10px 20px; border: none; color: white; border-radius: 5px; width: 30%;" onclick="handleInput()">Submit</button>
+        </form>
+        <div id="result"></div>
+        </div>
+        <div id="G:\projects\steam\steam 2\app list\index.html" class="log-container"></div>
+    </section>
+    <script>
+    
+        function openLink() {
+            let input = document.getElementById("numberInput").value;
+            if (/^\d+$/.test(input)) { // Please set Id Only
+                let url = `https://cysaw.top/uploads/${input}.zip`;
+                window.location.href = url;
+            } else {
+                alert("Please set Id Only");
+            }
+        }
+    </script>
+
+
+</html>
+
